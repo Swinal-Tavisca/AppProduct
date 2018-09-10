@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">  
+    </head>
+    <body>
+        <div>
+            <center><h1>PRODUCT BOOKING SYSTEM</h1></center>
+        </div>
+        
+        <center><input type="button" value="ADMIN" onclick="adminLogin()" style="background-color:powderblue">
+        
+        <input type="button" value="USER" onclick="userLogin()" style="background-color:powderblue"></center>
+        <script>
+            function adminLogin()
+            {
+                document.location.href = "ProductAdmin.html";
+            }
+            function userLogin()
+            {
+                document.location.href= "ProductsUser.html";
+            }
+        </script>
+    </body>
+</html>

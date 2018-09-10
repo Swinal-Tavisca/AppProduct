@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="style.css">  
+    <script src="air.js"></script>
+    <script src="car.js"></script>
+    <script src="hotel.js"></script>
+    <script src="activity.js"></script>
+</head>
+<body>
+    <div class="tab">
+            <button class="tablinks" onclick="openProduct(event, 'Car')">Car</button>
+            <button class="tablinks" onclick="openProduct(event, 'Hotel')">Hotel</button>
+            <button class="tablinks" onclick="openProduct(event, 'Air')">Air</button>
+            <button class="tablinks" onclick="openProduct(event, 'Activity')">Activity</button>
+        </div>
+
+        <div id="Car" class="tabcontent">
+                <div>
+                    <form class="form-left">
+                         CAR NAME  :  <input type="text"  id=carname class="carpost"><br><br><br>
+                         CAR ID    :   <input type ="text"  id=carid class="carpost"><br><br><br>
+                         CAR MODEL NO : <input type="text" id=carno class="carpost"><br><br><br>
+                         CAR PRICE : <input type="text" id=carprice class="carpost"><br><br><br>
+
+                    </form>
+                    <div class="butt">
+                        <input type="submit" value="submit" onclick="postCar()" >
+                    </div>
+                     
+                </div>
+            
+        </div>
+
+        <div id="Hotel" class="tabcontent">
+             <div>
+                <form class="form-left">
+                     HOTEL NAME  :  <input type="text"  id=hotelname class="hotelpost"><br><br><br> 
+                     HOTEL ID    :   <input type ="text"  id=hotelid class="hotelpost"><br><br><br>
+                     HOTEL TYPE : <input type="text" id=hoteltype class="hotelpost"><br><br><br>
+                     HOTEL PRICE : <input type="text" id=hotelprice class="hotelpost"><br><br><br>
+                     HOTEL LOCATION :<input type="text" id=hotellocation class="hotelpost"><br><br><br>
+                     NO OF ROOMS AVAILABLE: <input type="text" id=hotellocation class="hotelpost"><br><br><br>
+                    
+                </form>
+                 <div class="butt">
+                  <input type="submit" value="submit" onclick="postHotel()">
+                 </div>
+            </div>
+        </div>
+
+        <div id="Air" class="tabcontent">
+            <div>
+                <form class="form-left">
+                     AIR NAME  :  <input type="text"  id=airname class="airpost"><br><br><br>
+                     AIR ID    :   <input type ="text"  id=airid class="airpost"><br><br><br>
+                     AIR PRICE : <input type="text" id=airprice class="airpost"><br><br><br>
+                     AIR SOURCE : <input type="text" id=airsource class="airpost"><br><br><br>
+                     AIR DESTINATION  :  <input type="text"  id=airdestination class="airpost"><br><br><br>
+                     AIR ARRIVAL DATE    :   <input type ="date"  id=airarrivaldate class="airpost"><br><br><br>
+                     AIR DEPARTURE DATE : <input type="date" id=airdeparturedate class="airpost"><br><br><br>
+                     AIR ARRIVAL TIME: <input type="text" id=airarrivaltime class="airpost"><br><br><br>
+                     AIR DEPARTURE TIME: <input type="text" id=airdeparturetime class="airpost"><br><br><br>
+                    
+                </form>
+                <div class="butt">
+                 <input type="submit" value="submit" onclick="postAir()">
+                </div>
+            </div>
+        </div>
+    
+        <div id="Activity" class="tabcontent">
+            <div>
+                <form class="form-left">
+                     ACTIVITY NAME  :  <input type="text"  id=activityname class="activitypost"><br><br><br>
+                     ACTIVITY ID    :   <input type ="text"  id=activityid class="activitypost"><br><br><br>
+                     ACTIVITY TYPE : <input type="text" id=activitytype class="activitypost"><br><br><br>
+                     ACTIVITY LOCATION : <input type="text" id=activitylocation class="activitypost"><br><br><br>
+                     NUMBER OF PEOPLE : <input type="text" id=activitynoofpeople  class="activitypost"><br><br><br>
+                     
+                </form>
+                <div class="butt">
+                 <input type="submit" value="submit" onclick="postActivity()">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openProduct(evt, productName) 
+            {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(productName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            
+        </script>
+     
+</body>
+</html> 

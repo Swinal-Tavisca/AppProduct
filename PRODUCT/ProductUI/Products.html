@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="style.css">  
+    <script src="car.js"></script>
+    <script src="air.js"></script>
+    <script src="hotel.js"></script>
+    <script src="activity.js"></script>
+</head>
+<body>
+
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openProduct(event, 'Car')">Car</button>
+            <button class="tablinks" onclick="openProduct(event, 'Hotel')">Hotel</button>
+            <button class="tablinks" onclick="openProduct(event, 'Air')">Air</button>
+            <button class="tablinks" onclick="openProduct(event, 'Activity')">Activity</button>
+        </div>
+
+        <div id="Car" class="tabcontent">
+            <button class="tablinks" onclick="loadCar()">GetCar</button>
+            <div id="productListCar">
+            </div>
+        </div>
+
+        <div id="Hotel" class="tabcontent">
+            <button class="tablinks" onclick="loadHotel()">GetHotel</button>
+            <div id="productListHotel">
+            </div>
+        </div>
+
+        <div id="Air" class="tabcontent">
+           <button class="tablinks" onclick="loadAir()">GetAir</button>
+            <div id="productListAir">
+            </div>
+        </div>
+    
+        <div id="Activity" class="tabcontent">
+           <button class="tablinks" onclick="loadActivity()">GetActivity</button>
+            <div id="productListActivity">
+            </div>
+        </div>
+
+        <script>
+            function openProduct(evt, productName) 
+            {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(productName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            
+        </script>
+     
+</body>
+</html> 

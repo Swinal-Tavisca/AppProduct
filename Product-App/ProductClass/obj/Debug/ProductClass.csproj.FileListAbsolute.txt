@@ -1,0 +1,11 @@
+C:\Users\swinal\source\repos\Product-App\ProductClass\bin\Debug\ProductClass.dll.config
+C:\Users\swinal\source\repos\Product-App\ProductClass\bin\Debug\ProductClass.dll
+C:\Users\swinal\source\repos\Product-App\ProductClass\bin\Debug\ProductClass.pdb
+C:\Users\swinal\source\repos\Product-App\ProductClass\bin\Debug\EntityFramework.dll
+C:\Users\swinal\source\repos\Product-App\ProductClass\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\swinal\source\repos\Product-App\ProductClass\bin\Debug\EntityFramework.xml
+C:\Users\swinal\source\repos\Product-App\ProductClass\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\swinal\source\repos\Product-App\ProductClass\obj\Debug\ProductClass.csprojResolveAssemblyReference.cache
+C:\Users\swinal\source\repos\Product-App\ProductClass\obj\Debug\ProductClass.csproj.CoreCompileInputs.cache
+C:\Users\swinal\source\repos\Product-App\ProductClass\obj\Debug\ProductClass.dll
+C:\Users\swinal\source\repos\Product-App\ProductClass\obj\Debug\ProductClass.pdb
